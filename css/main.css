@@ -1,0 +1,229 @@
+.background {
+	position:relative;
+	height:100%;
+	background-image: url(../img/background/bg2.jpg);
+	background-size: cover;
+	z-index: 1;
+}
+
+.footer {
+	background-color: #B12700;
+	height: 100px;
+}
+
+.footer p {
+	margin-bottom: 0;
+	font-size: 12px;
+	padding-top: 17px;
+}
+
+.zodiacResult #yourSign {
+	display:table;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.zodiacResult #icon {
+	display:table;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.zodiacResult #yourHoroscope {
+	display:table;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.form-group h1 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-family: "Tangerine";
+	font-size: 50px;
+}
+
+/*Clearing Floats*/
+.cf:before, .cf:after{
+    content:"";
+    display:table;
+}
+
+.cf:after{
+    clear:both;
+}
+
+.cf{
+    zoom:1;
+}    
+/* Form wrapper styling */
+.form-wrapper {
+	display: table;
+    width: 380px;
+    padding: 15px;
+    margin: 25px auto 25px auto;
+    background: #444;
+    background: rgba(0,0,0,.2);
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+}
+
+/* Form text input */
+
+.form-wrapper input {
+	display: inline-block;
+    width: 65%;
+    height: 40px;
+    padding: 10px 5px;
+    float: left;   
+    font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    border: 0;
+    background: #eee;
+    border-radius: 3px 0 0 3px;     
+}
+
+.form-wrapper input:focus {
+    outline: 0;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+
+.form-wrapper input::-webkit-input-placeholder {
+   color: #999;
+   font-weight: normal;
+   font-style: italic;
+}
+
+.form-wrapper input:-moz-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.form-wrapper input:-ms-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}   
+
+/* Form submit button */
+.form-wrapper button {
+	display: inline-block;
+    overflow: visible;
+    position: relative;
+    float: left;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 35%;
+    font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    color: #fff;
+    text-transform: uppercase;
+    background: #d83c3c;
+    border-radius: 0 3px 3px 0;     
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+}  
+
+.form-wrapper button:hover{    
+    background: #e54040;
+}  
+
+.form-wrapper button:active,
+.form-wrapper button:focus{  
+    background: #c42f2f;
+    outline: 0;  
+}
+
+.form-wrapper button:before { /* left arrow */
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent #d83c3c transparent;
+    top: 12px;
+    left: -6px;
+}
+
+.form-wrapper button:hover:before{
+    border-right-color: #e54040;
+}
+
+.form-wrapper button:focus:before,
+.form-wrapper button:active:before{
+        border-right-color: #c42f2f;
+}     
+
+.form-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+    border: 0;
+    padding: 0;
+}   
+
+.zodiacTop {
+	text-align: center;
+	padding: 5px 0;
+}
+
+.zodiacTop h2 {
+	font-family: "Tangerine";
+	font-size: 80px;
+}
+
+.zodiacTop p {
+	margin: 0 auto;
+}
+
+.zodiacSection {
+	padding: 30px 0;
+}
+
+.zodiacCont {
+	display: block;
+	position: relative;
+	margin: 50px auto;
+	height: 450px;
+	width: 450px;
+}
+
+.zodiacWheel {
+	background-image: url(../img/background/zodiacWheel.png);
+	background-size: cover;
+	position: relative;
+	width: 450px;
+	height: 450px;
+	-moz-transform:rotate(320deg);
+	-webkit-transform:rotate(320deg);
+	-o-transform:rotate(320deg);
+	-ms-transform:rotate(320deg);
+	-webkit-animation: spin1 20s infinite linear;
+}
+/* animations */
+
+@keyframes spin1 {
+	0% {
+		-moz-transform:rotate(320deg);
+		-webkit-transform:rotate(320deg);
+		-o-transform:rotate(320deg);
+		-ms-transform:rotate(320deg);
+	}
+	100% {
+		-moz-transform:rotate(680deg);
+		-webkit-transform:rotate(680deg);
+		-o-transform:rotate(680deg);
+		-ms-transform:rotate(680deg); 
+	}
+}
+@-webkit-keyframes spin1 {
+	0% {
+		-moz-transform:rotate(320deg);
+		-webkit-transform:rotate(320deg);
+		-o-transform:rotate(320deg);
+		-ms-transform:rotate(320deg);
+	}
+	100% {
+		-moz-transform:rotate(680deg);
+		-webkit-transform:rotate(680deg);
+		-o-transform:rotate(680deg);
+		-ms-transform:rotate(680deg); 
+	}
+}

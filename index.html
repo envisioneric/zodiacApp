@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- title -->
+    <title>Chinese Zodiac</title>
+
+    <!-- Viewport Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- characterset -->
+    <meta charset="utf-8">
+
+    <!-- All CSS -->
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="css/fa/fontawesome-all.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/boot4/bootstrap.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+</head>
+<body>
+    <!-- zodiac container start -->
+    <div class="zodiacSection background">
+        <div class="container">
+            <div class="row">
+                <div class="zodiacTop col-lg-12">
+                    <h2>Zodiac Lookup</h2>
+                    <p>The Chinese Zodiac, known as Sheng Xiao, is based on a twelve-year cycle, each year in that cycle related to an animal sign. These signs are the rat, ox, tiger, rabbit, dragon, snake, horse, sheep, monkey, rooster, dog and pig.</p>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="zodiacCont">
+                        <div class="zodiacWheel">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-mid-12">
+                    <div class="form-group">
+                        <div>
+                            <h1>Find out your Chinese Zodiac!</h1>
+                        </div>
+                        <div class="form-wrapper cf">
+                            <input id="userdata" class="form-control" placeholder="What year were you born?">
+                            <!-- runs the function line 78 main.js -->
+                            <button type="button" onclick="zodiacSign()" class="btn btn-primary btn-lg">Find Sign</button>
+                        </div>
+                    </div>
+
+                    <div class="zodiacResult">
+                        <h1 id="yourSign"></h1>
+                        <img id="icon" src="">
+                        <p id="yourHoroscope"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- zodiac container end -->
+
+    <!-- footer start -->
+    <footer class="footer">
+        <div class=container>
+            <div class=row>
+                <div class="col-lg-12 text-center">
+                    <p>Eric Nguyen &copy; Copyright 2018 | All RightReserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
